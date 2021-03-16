@@ -1,0 +1,23 @@
+{
+    "name": "modules/user-module",
+    "description": "a user module package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Benjamin Española",
+            "email": "espanolabenjamin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modules\\UserModule\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\UserModule\\UserModuleServiceProvider"
+            ]
+        }
+    }
+}
